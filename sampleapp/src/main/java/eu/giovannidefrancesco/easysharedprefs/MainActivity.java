@@ -45,10 +45,10 @@ public class MainActivity extends AppCompatActivity {
 
         //retrieving
         String string = storage.get("string", "No string");
-        Boolean aBoolean = storage.get("boolean", false);
-        Float aFloat = storage.get("float", 0f);
-        Long aLong = storage.get("long", 0L);
-        Integer anInt = storage.get("int", 0);
+        boolean aBoolean = storage.get("boolean", false);
+        float aFloat = storage.get("float", 0f);
+        long aLong = storage.get("long", 0L);
+        int anInt = storage.get("int", 0);
         Iterator<String> strings = storage.get("setString", new HashSet<String>()).iterator();
         Iterator<Integer> intgers = storage.get("setNum", new HashSet<Integer>()).iterator();
 

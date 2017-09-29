@@ -1,5 +1,22 @@
 apply plugin: 'com.android.library'
 
+ext {
+    bintrayRepo = 'maven'
+    bintrayName = 'SweetPrefs'
+
+    // Maven metadata
+    publishedGroupId = 'eu.giovannidefrancesco.sweetprefs'
+    libraryName = 'SweetPrefs'
+    artifact = 'sweetprefs'
+
+    libraryDescription = 'SweetPrefs alleviates the pain of using SharedPreferences on Android'
+    libraryVersion = '1.0'
+
+    developerId = 'jibbo'
+    developerName = 'Giovanni De Francesco'
+    developerEmail = 'posta.giovanni.defrancesco@gmail.com'
+}
+
 android {
     compileSdkVersion 25
     buildToolsVersion "25.0.3"
@@ -32,3 +49,6 @@ dependencies {
 
     testCompile 'junit:junit:4.12'
 }
+
+apply from: 'https://raw.githubusercontent.com/jibbo/JCenter/master/installv1.gradle'
+apply from: 'https://raw.githubusercontent.com/jibbo/JCenter/master/bintrayv1.gradle'
