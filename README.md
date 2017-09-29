@@ -36,4 +36,4 @@ String username = storage.get("username", null)
 boolean firstLaunch = storage.get("firstlaunch",true);
 ```
 
-For a more advanced, see the MainActivity class.
+For a more advanced example, please check the MainActivity class.
