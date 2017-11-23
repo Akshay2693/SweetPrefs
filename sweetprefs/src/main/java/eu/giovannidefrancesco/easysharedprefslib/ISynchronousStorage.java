@@ -1,12 +1,13 @@
 package eu.giovannidefrancesco.easysharedprefslib;
 
 /**
- * This interface allows users of a SharedPreferences to make use of the
+ * This interface allows users to make their changes on a storage effective immediately.
+ * For example: An IStorage using Shared Preferences would use the
  * synchronous method .commit(), instead of the asynchronous .apply() method.
  */
 // I want this to be public such that tests and third-parties can use or extend it.
 @SuppressWarnings("WeakerAccess")
-public interface ISharedPrefStorage extends IStorage {
+public interface ISynchronousStorage extends IStorage {
     /**
      * Same as .store() but synchronous.
      * @see IStorage

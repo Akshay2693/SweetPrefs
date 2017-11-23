@@ -8,10 +8,7 @@ import android.support.annotation.Nullable;
 
 import com.google.gson.Gson;
 
-/**
- *
- */
-public class SharedPreferenceStorage implements ISharedPrefStorage {
+public class SharedPreferenceStorage implements ISynchronousStorage {
 
     private SharedPreferences mSp;
     private Gson mGson;
