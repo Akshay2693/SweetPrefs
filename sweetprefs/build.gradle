@@ -10,7 +10,7 @@ ext {
     artifact = 'sweetprefs'
 
     libraryDescription = 'SweetPrefs alleviates the pain of using SharedPreferences on Android'
-    libraryVersion = '1.0'
+    libraryVersion = '1.0.1'
 
     developerId = 'jibbo'
     developerName = 'Giovanni De Francesco'
@@ -24,8 +24,8 @@ android {
     defaultConfig {
         minSdkVersion 9
         targetSdkVersion 25
-        versionCode 1
-        versionName "1.0"
+        versionCode 2
+        versionName "1.0.1"
 
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
 
