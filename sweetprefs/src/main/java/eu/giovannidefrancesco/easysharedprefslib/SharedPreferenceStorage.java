@@ -86,6 +86,17 @@ public class SharedPreferenceStorage implements ISharedPrefStorage {
         }
     }
 
+    @Override
+    public void reset() {
+        mSp.edit().clear().apply();
+    }
+
+    @Override
+    @SuppressLint("ApplySharedPref")
+    public void resetImmediate() {
+        mSp.edit().clear().commit();
+    }
+
     private String serializeObject(SharedPreferences.Editor editor, String key, Object toStore) {
         return mGson.toJson(toStore);
     }
