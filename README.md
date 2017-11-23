@@ -1,9 +1,11 @@
 # SweetPrefs
 SweetPrefs alleviates the pain of using SharedPreferences on Android
 
+[ ![Download](https://api.bintray.com/packages/jibbo/maven/SweetPrefs/images/download.svg) ](https://bintray.com/jibbo/maven/SweetPrefs/_latestVersion)
+
 ## Download
 
-`compile 'eu.giovannidefrancesco.sweetprefs:sweetprefs:1.0'`
+`compile 'eu.giovannidefrancesco.sweetprefs:sweetprefs:1.0.1'`
 
 ## Usage
 
@@ -16,7 +18,10 @@ IStorage storage = new SharedPreferenceStorage(this, "SomePrefs", MODE_PRIVATE);
 storage.store("aKey", ANY_OBJECT);
 
 // retrieving
-THE_REAL_OBJECT_TYPE object = storage.get("aKey", DEFAULT_VALUE)
+THE_REAL_OBJECT_TYPE object = storage.get("aKey", DEFAULT_VALUE);
+
+// removes all the stored objects
+storage.reset();
 
 ```
 
@@ -32,7 +37,7 @@ storage.store("username", "jibbo");
 storage.store("firstlaunch",false);
 
 // retrieving
-String username = storage.get("username", null)
+String username = storage.get("username", null);
 boolean firstLaunch = storage.get("firstlaunch",true);
 ```
 

@@ -50,7 +50,7 @@ public class MainActivity extends AppCompatActivity {
         long aLong = storage.get("long", 0L);
         int anInt = storage.get("int", 0);
         Iterator<String> strings = storage.get("setString", new HashSet<String>()).iterator();
-        Iterator<Integer> intgers = storage.get("setNum", new HashSet<Integer>()).iterator();
+        Iterator<Integer> integers = storage.get("setNum", new HashSet<Integer>()).iterator();
 
         // retrieve non-existing obj
         Object not = storage.get("nonexisting", null);
@@ -64,12 +64,19 @@ public class MainActivity extends AppCompatActivity {
         }
         out = out.substring(0, out.length() - 1) + "}\n";
         out += "The Set<Integer>:{ ";
-        while (intgers.hasNext()) {
-            out += intgers.next() + ",";
+        while (integers.hasNext()) {
+            out += integers.next() + ",";
         }
         out = out.substring(0, out.length() - 1) + "}\n";
 
-        out += "NonExisting: " + not;
+        out += "NonExisting: " + not + "\n";
+
+        // cleaning up, if necessary
+        storage.reset();
+
+        boolean isBooleanStillThere = storage.get("boolean", false);
+        out += "Cleaned: " + !isBooleanStillThere;
+
         textView.setText(out);
     }
 }
