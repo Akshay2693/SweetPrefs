@@ -1,7 +1,7 @@
 # SweetPrefs
 SweetPrefs alleviates the pain of using SharedPreferences on Android
 
-[ ![Android Arsenal](https://img.shields.io/badge/Android%20Arsenal-SweetPrefs-brightgreen.svg?style=flat)](https://android-arsenal.com/details/1/6294) [![API](https://img.shields.io/badge/API-9%2B-orange.svg?style=flat)](https://android-arsenal.com/api?level=9) [ ![Download](https://api.bintray.com/packages/jibbo/maven/SweetPrefs/images/download.svg) ](https://bintray.com/jibbo/maven/SweetPrefs/_latestVersion)
+[ ![Android Arsenal](https://img.shields.io/badge/Android%20Arsenal-SweetPrefs-brightgreen.svg?style=flat)](https://android-arsenal.com/details/1/6294) [![API](https://img.shields.io/badge/API-9%2B-orange.svg?style=flat)](https://android-arsenal.com/api?level=9) [ ![Download](https://api.bintray.com/packages/jibbo/maven/SweetPrefs/images/download.svg) ](https://bintray.com/jibbo/maven/SweetPrefs/_latestVersion)[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)[![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
 
 ## Download
 
